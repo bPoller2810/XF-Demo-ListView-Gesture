@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:InputDemo.Views"
+            x:Class="InputDemo.Views.MainPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="2*" />
+        </Grid.RowDefinitions>
+
+        <Label Text="{Binding Big}" 
+               HorizontalOptions="Center"
+               Grid.Row="1"/>
+
+
+        <ListView ItemsSource="{Binding Items}"
+                  ItemTapped="ItemTapped"
+                  Grid.Row="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <!--#region right klickable part-->
+                            <BoxView Grid.Column="1" 
+                                     Margin ="20,0"
+                                     HeightRequest="30"
+                                     BackgroundColor="Gray" >
+                                <BoxView.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnBoxTapped" />
+                                </BoxView.GestureRecognizers>
+                            </BoxView>
+                            <Label Grid.Column="1" 
+                                   Text="{Binding Count}" 
+                                   TextColor="White" 
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"/>
+                            <!--#endregion-->
+                            
+                            <!--#region name indicator-->
+                            <Label HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   Text="{Binding Name}" />
+                            <!--#endregion-->
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </Grid>
+
+    
+
+
+
+</ContentPage>
