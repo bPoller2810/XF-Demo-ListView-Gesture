@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDemo.iOS", "InputDemo\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDemo.UWP", "InputDemo\InputDemo.UWP\InputDemo.UWP.csproj", "{BFF652FC-119C-4369-AF25-E51261FD4C4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputDemo", "InputDemo\InputDemo\InputDemo.csproj", "{A02B023D-8F59-4216-8221-0EED6F05F257}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InputDemo", "InputDemo\InputDemo\InputDemo.csproj", "{A02B023D-8F59-4216-8221-0EED6F05F257}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,8 +43,6 @@ Global
 		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Debug|x64.Build.0 = Debug|Any CPU
 		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Debug|x64.Deploy.0 = Debug|Any CPU
 		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Debug|x86.Build.0 = Debug|Any CPU
-		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Debug|x86.Deploy.0 = Debug|Any CPU
 		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5E9BADCC-7B77-40BA-8413-510DED6327A7}.Release|Any CPU.Deploy.0 = Release|Any CPU
@@ -79,7 +77,6 @@ Global
 		{40F00767-252E-42A5-9D6B-1E287B3DC15B}.Debug|x64.Build.0 = Debug|iPhone
 		{40F00767-252E-42A5-9D6B-1E287B3DC15B}.Debug|x64.Deploy.0 = Debug|iPhone
 		{40F00767-252E-42A5-9D6B-1E287B3DC15B}.Debug|x86.ActiveCfg = Debug|iPhone
-		{40F00767-252E-42A5-9D6B-1E287B3DC15B}.Debug|x86.Build.0 = Debug|iPhone
 		{40F00767-252E-42A5-9D6B-1E287B3DC15B}.Debug|x86.Deploy.0 = Debug|iPhone
 		{40F00767-252E-42A5-9D6B-1E287B3DC15B}.Release|Any CPU.ActiveCfg = Release|iPhone
 		{40F00767-252E-42A5-9D6B-1E287B3DC15B}.Release|Any CPU.Build.0 = Release|iPhone
