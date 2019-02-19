@@ -2,6 +2,8 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using ListView = Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListView;
+using ListViewSelectionMode = Xamarin.Forms.PlatformConfiguration.WindowsSpecific.ListViewSelectionMode;
 
 namespace InputDemo.Views
 {
@@ -21,6 +23,8 @@ namespace InputDemo.Views
         {
             InitializeComponent();
             this.ViewModel = new MainViewModel();
+            
+            ListView.SetSelectionMode(this.DemoListView, ListViewSelectionMode.Inaccessible);
         }
         #endregion
 
